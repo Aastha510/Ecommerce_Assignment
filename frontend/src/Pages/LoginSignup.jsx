@@ -22,7 +22,7 @@ import './CSS/LoginSignup.css'
         await fetch('https://ecommerce-assignment-3fj8.onrender.com/login',{
             method:'POST',
             headers:{
-                Accept:'application/form-data',
+                Accept:'application/json',
                 'Content-Type':'application/json',
             },
             body:JSON.stringify(formData),
@@ -44,7 +44,7 @@ import './CSS/LoginSignup.css'
         await fetch('https://ecommerce-assignment-3fj8.onrender.com/signup',{
             method:'POST',
             headers:{
-                Accept:'application/form-data',
+                Accept:'application/json',
                 'Content-Type':'application/json',
             },
             body:JSON.stringify(formData),
