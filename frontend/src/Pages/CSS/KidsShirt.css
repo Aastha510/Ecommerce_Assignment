@@ -172,3 +172,50 @@
     font-weight: 500;
   }
   
+  @media (max-width: 768px) {
+    .shirts-page {
+      padding: 20px;
+    }
+  
+    .shirt-card {
+      max-width: 90%;
+      padding: 16px;
+    }
+  
+    .shirt-card h2 {
+      font-size: 18px;
+    }
+  
+    .size-button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .original-price {
+      font-size: 16px;
+    }
+  
+    .payable-price {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shirts-grid {
+      gap: 20px;
+    }
+  
+    .color-options {
+      gap: 8px;
+    }
+  
+    .color-circle {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .shirts-page h1 {
+      font-size: 24px;
+    }
+  }
+  

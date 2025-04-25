@@ -72,14 +72,15 @@ import cart from '../Assets/cart.jpg';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("shop");
-
+const [menu, setMenu] = useState("shop");
+// const menuRef = useRef();
   return (
     <div className='navbar'>
       <div className='nav-logo'>
         <img src={logo} alt='' />
         <p>JCB</p>
       </div>
+      
       <ul className='nav-menu'>
         <li onClick={() => { setMenu("shop") }}>
           <Link style={{ textDecoration: 'none' }} to='/'>Shop</Link>

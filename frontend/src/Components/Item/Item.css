@@ -36,3 +36,38 @@
     display: flex;
   }
   
+  @media (max-width: 768px) {
+    .item {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .item img {
+      height: auto;
+    }
+  
+    .item-prices {
+      gap: 10px;
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      width: 100%;
+    }
+  
+    .item p {
+      font-size: 14px;
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 14px;
+    }
+  }
+  
