@@ -19,7 +19,7 @@ import './CSS/LoginSignup.css'
         console.log("Login Successfully",formData);
 
         let responseData;
-        await fetch('http://localhost:4000/login',{
+        await fetch('https://ecommerce-assignment-3fj8.onrender.com',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
