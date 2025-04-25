@@ -41,7 +41,7 @@ import './CSS/LoginSignup.css'
     const signup=async()=>{
         console.log("signup successfully",formData);
         let responseData;
-        await fetch('http://localhost:4000/signup',{
+        await fetch('https://ecommerce-assignment-3fj8.onrender.com',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
