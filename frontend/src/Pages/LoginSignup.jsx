@@ -19,7 +19,7 @@ import './CSS/LoginSignup.css'
         console.log("Login Successfully",formData);
 
         let responseData;
-        await fetch('https://ecommerce-frontend-gw8h.onrender.com',{
+        await fetch('https://ecommerce-frontend-gw8h.onrender.com/login',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
@@ -41,7 +41,7 @@ import './CSS/LoginSignup.css'
     const signup=async()=>{
         console.log("signup successfully",formData);
         let responseData;
-        await fetch('http://localhost:4000/login',{
+        await fetch('https://ecommerce-frontend-gw8h.onrender.com/signup',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
