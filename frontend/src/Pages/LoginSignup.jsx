@@ -22,7 +22,7 @@ import './CSS/LoginSignup.css'
         await fetch('https://ecommerce-frontend-gw8h.onrender.com',{
             method:'POST',
             headers:{
-                Accept:'application/json',
+                Accept:'application/form-data',
                 'Content-Type':'application/json',
             },
             body:JSON.stringify(formData),
