@@ -19,10 +19,10 @@ import './CSS/LoginSignup.css'
         console.log("Login Successfully",formData);
 
         let responseData;
-        await fetch('https://ecommerce-assignment-3fj8.onrender.com',{
+        await fetch('http://localhost:4000/login',{
             method:'POST',
             headers:{
-                Accept:'application/json.',
+                Accept:'application/form-data',
                 'Content-Type':'application/json',
             },
             body:JSON.stringify(formData),
@@ -41,10 +41,10 @@ import './CSS/LoginSignup.css'
     const signup=async()=>{
         console.log("signup successfully",formData);
         let responseData;
-        await fetch('https://ecommerce-assignment-3fj8.onrender.com',{
+        await fetch('http://localhost:4000/login',{
             method:'POST',
             headers:{
-                Accept:'application/json',
+                Accept:'application/form-data',
                 'Content-Type':'application/json',
             },
             body:JSON.stringify(formData),
