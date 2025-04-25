@@ -10,7 +10,12 @@ const { log } = require("console");
 const { type } = require("os");
 
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://ecommerce-frontend-gw8h.onrender.com', 
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+app.use(cors(corsOptions));
 
 //DATABASE CONNECTION WITH MONGO DB
 mongoose.connect("mongodb+srv://agrh510:Aastha0510@cluster0.wvfxnxu.mongodb.net/e-commerce")
